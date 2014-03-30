@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="Seanph.Calendar.Controls.CalendarEvent"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" >
+    <Grid Height="40">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="62"/>
+            <ColumnDefinition Width="288"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="lblStartTime" HorizontalAlignment="Left" Margin="23,5,0,0" TextWrapping="Wrap" Text="23:59" VerticalAlignment="Top" Height="15" Width="31"/>
+        <TextBlock x:Name="lblInfo" Grid.Column="1" HorizontalAlignment="Left" Margin="10,5,0,0" TextWrapping="Wrap" Text="Lectures" VerticalAlignment="Top" Height="30" Width="240"/>
+        <TextBlock x:Name="lblEndTime" HorizontalAlignment="Left" Margin="23,20,0,0" TextWrapping="Wrap" Text="23:59" VerticalAlignment="Top" Height="15" Width="31"/>
+        <Border x:Name="brdr" BorderBrush="Black" BorderThickness="0,0,0,1" Grid.ColumnSpan="2" Height="40"/>
+        <Border BorderBrush="Black" BorderThickness="0" Grid.Column="1" Width="auto" Height="40" Margin="0,0,100,0"/>
+        <Button x:Name="btnMore" Content="..." HorizontalAlignment="Right" VerticalAlignment="Top" Width="15" Grid.Column="1" Margin="0,8,10,0" Height="25" Click="btnMore_Click"/>
+    </Grid>
+</UserControl>
