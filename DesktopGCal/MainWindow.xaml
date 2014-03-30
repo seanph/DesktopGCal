@@ -11,13 +11,13 @@
         <Button x:Name="btnUpdateLastUpdated" Content="UpdateLastUpdated" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" Width="158" Click="btnUpdateLastUpdated_Click"/>
         <Button x:Name="btnGetAllFromGCal" Content="Get all -&gt; DB" HorizontalAlignment="Left" Margin="10,116,0,0" VerticalAlignment="Top" Width="158" IsEnabled="False" Click="btnGetAllFromGCal_Click"/>
         <Button x:Name="btnLoadDB" Content="Load From DB" HorizontalAlignment="Left" Margin="10,143,0,0" VerticalAlignment="Top" Width="158" Click="btnLoadDB_Click"/>
-        <Button x:Name="btnLoadCal" Content="Load Calendar" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top" Width="87" Height="22" IsEnabled="False" ToolTip="To be implemented"/>
+        <Button x:Name="btnLoadCal" Content="Load Calendar" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top" Width="87" Height="22" IsEnabled="False" ToolTip="To be implemented" Click="btnLoadCal_Click"/>
         <Button x:Name="btnAddEvent" Content="Add Event" HorizontalAlignment="Left" Margin="10,236,0,0" VerticalAlignment="Top" Width="158" IsEnabled="False" ToolTip="To be implemented"/>
         <Button x:Name="btnEditEvent" Content="Edit Event" HorizontalAlignment="Left" Margin="10,263,0,0" VerticalAlignment="Top" Width="158" IsEnabled="False" ToolTip="To be implemented"/>
         <Button x:Name="btnDeleteEvent" Content="Delete Event" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top" Width="158" IsEnabled="False" ToolTip="To be implemented"/>
         <Button x:Name="btnSync" Content="Sync with Google Calendar" HorizontalAlignment="Left" Margin="10,356,0,0" VerticalAlignment="Top" Width="158" IsEnabled="False" Click="btnSync_Click"/>
         <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="10,673,0,0" VerticalAlignment="Top" Width="158" Click="btnExit_Click"/>
-        <ComboBox HorizontalAlignment="Left" Margin="61,197,0,0" VerticalAlignment="Top" Width="107" IsEnabled="False" SelectedIndex="0" ToolTip="To be implemented">
+        <ComboBox x:Name="cmbCalendars" HorizontalAlignment="Left" Margin="61,197,0,0" VerticalAlignment="Top" Width="107" IsEnabled="False" SelectedIndex="0" ToolTip="To be implemented">
             <ComboBoxItem Content="All Calendars"/>
         </ComboBox>
         <Button x:Name="btnLoadMore" Content="Load More" HorizontalAlignment="Left" Margin="183,673,0,0" VerticalAlignment="Top" Width="731" Click="btnLoadMore_Click"/>

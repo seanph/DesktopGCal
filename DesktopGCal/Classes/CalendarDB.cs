@@ -5,6 +5,7 @@
 // CalendarDB.cs
 //   Defines a class to manage a locally stored SQLite calendar database.
 #endregion
+
 using System;
 using System.IO;
 using System.Data;
@@ -341,6 +342,21 @@ namespace Seanph.Calendar.Helpers
                     "UPDATE [Events] SET id=\"{0}\" WHERE id=\"{1}\";", 
                     newId, 
                     c.Id));
+        }
+
+        /// <summary>
+        ///     Loads a list of all calendars stored in the local DB
+        /// </summary>
+        public List<CalCalendar> LoadCalendars()
+        {
+            const string sqlquery = "SELECT * FROM [Calendars];";
+            DataTable dataItems = _calendarSqLite.DataQuery(sqlquery);
+
+            var cals = new List<CalCalendar>();
+            foreach (DataRow d in dataItems.Rows)
+                cals.Add(new CalCalendar(d));
+
+            return cals;
         }
     }
 }

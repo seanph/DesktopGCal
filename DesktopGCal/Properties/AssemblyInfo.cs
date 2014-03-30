@@ -10,9 +10,9 @@ using System.Windows;
 [assembly: AssemblyTitle("DesktopGCal")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
+[assembly: AssemblyCompany("Sean Phillips")]
 [assembly: AssemblyProduct("DesktopGCal")]
-[assembly: AssemblyCopyright("Copyright © Microsoft 2014")]
+[assembly: AssemblyCopyright("Copyright © Sean Phillips 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
