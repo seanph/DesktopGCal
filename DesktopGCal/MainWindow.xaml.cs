@@ -166,5 +166,11 @@ namespace Seanph.Calendar
             _currentCalId = (cmbCalendars.Items[cmbCalendars.SelectedIndex] as ComboBoxItem).Tag.ToString();
             LoadEvents(_currentCalId,true);
         }
+
+        private void btnTest_Click(object sender, RoutedEventArgs e)
+        {
+            AddEditEvent frmAdd = new AddEditEvent();
+            frmAdd.Show();
+        }
     }
 }

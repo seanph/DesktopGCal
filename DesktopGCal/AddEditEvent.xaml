@@ -1,0 +1,21 @@
+﻿<Window x:Name="frmEventEdit" x:Class="Seanph.Calendar.AddEditEvent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Event" Height="331" Width="407" WindowStyle="ToolWindow" ResizeMode="NoResize">
+    <Grid HorizontalAlignment="Left" Width="397">
+        <TextBox x:Name="txtTitle" HorizontalAlignment="Left" Height="46" Margin="10,10,0,0" TextWrapping="Wrap" Text="Event Title" VerticalAlignment="Top" Width="382" FontSize="20" VerticalContentAlignment="Center" GotFocus="txtTitle_GotFocus" Foreground="LightGray" LostFocus="txtTitle_LostFocus" Grid.ColumnSpan="2"/>
+        <DatePicker x:Name="dateStart" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTimeStart" HorizontalAlignment="Left" Height="23" Margin="111,61,0,0" TextWrapping="Wrap" Text="00:00" VerticalAlignment="Top" Width="72"/>
+        <Label Content="to" HorizontalAlignment="Left" Margin="188,61,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dateEnd" HorizontalAlignment="Left" Margin="214,61,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTimeEnd" HorizontalAlignment="Left" Height="23" Margin="315,61,0,0" TextWrapping="Wrap" Text="00:00" VerticalAlignment="Top" Width="72"/>
+        <CheckBox x:Name="chkAllDay" Content="All Day" HorizontalAlignment="Left" Margin="338,89,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtLocation" HorizontalAlignment="Left" Height="23" Margin="10,125,0,0" TextWrapping="Wrap" Text="Location" VerticalAlignment="Top" Width="382" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtDescription" HorizontalAlignment="Left" Height="65" Margin="10,153,0,0" TextWrapping="Wrap" Text="Description" VerticalAlignment="Top" Width="382" Grid.ColumnSpan="2"/>
+        <Label Content="Calendar" HorizontalAlignment="Left" Margin="209,235,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbCalendar" HorizontalAlignment="Left" Margin="267,235,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="312,275,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="10,275,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>
