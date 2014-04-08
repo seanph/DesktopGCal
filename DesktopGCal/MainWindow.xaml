@@ -21,7 +21,8 @@
             <ComboBoxItem Content="All Calendars"/>
         </ComboBox>
         <Button x:Name="btnLoadMore" Content="Load More" HorizontalAlignment="Left" Margin="183,673,0,0" VerticalAlignment="Top" Width="731" Click="btnLoadMore_Click"/>
-        <Button x:Name="btnTest" Content="Test Button!" HorizontalAlignment="Left" Margin="10,646,0,0" VerticalAlignment="Top" Width="158" Click="btnTest_Click"/>
+        <Button x:Name="btnTest2" Content="Test Button 2!" HorizontalAlignment="Left" Margin="10,646,0,0" VerticalAlignment="Top" Width="158" Click="btnTest2_Click"/>
+        <Button x:Name="btnTest_Copy" Content="Test Button!" HorizontalAlignment="Left" Margin="10,618,0,0" VerticalAlignment="Top" Width="158" Click="btnTest_Click"/>
 
     </Grid>
 </Window>

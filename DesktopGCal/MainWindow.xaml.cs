@@ -172,5 +172,11 @@ namespace Seanph.Calendar
             AddEditEvent frmAdd = new AddEditEvent();
             frmAdd.Show();
         }
+
+        private void btnTest2_Click(object sender, RoutedEventArgs e)
+        {
+            AddEditEvent frmAdd = new AddEditEvent("Interesting stuff");
+            frmAdd.Show();
+        }
     }
 }

@@ -1,46 +1,33 @@
-﻿using System.Windows;
-using System.Windows.Media;
+﻿#region License and Summary
+// Copyright (c) 2014 Sean Phillips
+// Distributed under the BSD License (see LICENSE.md for full license text)
+//
+// AddEditEvent.xaml.cs
+//   Defines operation for the AddEditEvent form, which allows the editing and
+//   addition of new events to the local calendar database.
+#endregion
 
+
+using System.Windows;
+using Xceed.Wpf.Toolkit;
+    
 namespace Seanph.Calendar
 {
     public partial class AddEditEvent : Window
     {
+        // This needs to be implemented next.
+
+        // "Add Mode"
         public AddEditEvent()
         {
             InitializeComponent();
         }
 
-        //----
-        // "Placeholder text" textbox code
-        // TODO [UI]: Extract placeholder text textbox code to a control
-        bool _placeholder = true;
-        private void txtTitle_GotFocus(object sender, RoutedEventArgs e)
+        // "Edit Mode"
+        public AddEditEvent(string eventDetails)
         {
-            if (_placeholder)
-            {
-                txtTitle.Text = "";
-                txtTitle.Foreground = SystemColors.ControlTextBrush;
-            }
+            InitializeComponent();
+            txtTitle.Text = eventDetails;
         }
-
-        private void txtTitle_LostFocus(object sender, RoutedEventArgs e)
-        {
-            if (txtTitle.Text == "")
-            {
-                txtTitle.Text = "Event Title";
-                txtTitle.Foreground = Brushes.LightGray;
-                _placeholder = true;
-            }
-            else
-            {
-                _placeholder = false;
-            }
-        }
-        //----
-
-        // TODO [UI]: Build a DateTime picker component
-        // For time, maybe use a UpDown style component that goes in 15 minute increments
-        // Obviously, has to allow user to manually enter times too.
-        // Pair this with a Calendar control for date.
     }
 }
