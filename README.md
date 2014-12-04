@@ -3,6 +3,9 @@
 A desktop calendar built to sync with Google Calendar - a WPF application developed using C#.
 My first project on GitHub so if this breaks, sets things on fire and disappears, don't be surprised!
 
+## Abandoned
+This project is essentially abandoned now. I simply have no use for it and do not plan to resume development anytime soon. Might be interesting for someone to look at how I approached it though, so I'll be leaving it up.
+
 ## Notes
 Currently a work in progress, and the user interface is not laid out for end-users, but for testing.
 
